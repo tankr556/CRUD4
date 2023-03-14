@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <center>
+        <h1>Update Page</h1>
+    </center>
+
+    <form action="updateUser" method="post">
+        <input type="hidden" value="{{data._id}}" name="id">
+        <div>
+            <label>UserName : </label>
+            <input type="text" placeholder="Enter UserName" name="name" value="{{data.name}}">
+            <label>Email : </label>
+            <input type="email" placeholder="Enter Email" name="email" value="{{data.email}}">
+            <label>Password : </label>
+            <input type="password" placeholder="Enter Password" name="password" value="{{data.password}}">
+            <button type="submit">Login</button>
+            <span>
+                <a href="display"><u>View Here!!!!</u></a>
+            </span>
+        </div>
+    </form>
+</body>
+
+</html>
